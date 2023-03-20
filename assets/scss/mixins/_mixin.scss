@@ -1,0 +1,11 @@
+@mixin container {
+   width: 1260px;
+   padding: 0 30px;
+   margin: auto;
+   position: relative;
+   max-width: 100%;
+}
+@mixin flex-align($align: stretch) {
+   display: flex;
+   align-items: $align;
+}

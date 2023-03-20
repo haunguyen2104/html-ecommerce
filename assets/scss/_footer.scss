@@ -1,0 +1,222 @@
+/*
+.footer {
+   user-select: none;
+   background-color: rgba(0, 0, 0, 0.8);
+   color: $white-color;
+
+   &-container {
+      @include container;
+      text-align: center;
+   }
+
+   &-content {
+      padding-top: 30px;
+      padding-bottom: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+   }
+   &-logo {
+      flex: 1;
+      align-items: center;
+      a {
+         width: 200px;
+         font-weight: 800;
+         font-size: 18px;
+         text-align: center;
+         letter-spacing: 2px;
+         height: 100%;
+         user-select: none;
+         color: $white-color;
+         & img {
+            width: 100%;
+            object-fit: cover;
+         }
+      }
+   }
+   &-center {
+      flex: 4;
+      display: flex;
+      align-items: stretch;
+      justify-content: flex-start;
+      gap: 30px;
+      &-menu {
+         text-align: left;
+         div {
+            text-align: right;
+            text-align: justify;
+            margin-left: 8px;
+         }
+         p {
+            text-transform: uppercase;
+            font-weight: 600;
+            font-size: 18px;
+            position: relative;
+            display: block;
+            width: fit-content;
+            &::before {
+               content: "";
+               position: absolute;
+               bottom: 3px;
+               left: 50%;
+               transform: translateX(-50%);
+               width: 50%;
+               height: 2px;
+               background-color: $white-color;
+            }
+         }
+      }
+      &-item {
+         min-width: 135px;
+      }
+      &-item:hover &-link {
+         color: $orange-color;
+      }
+      &-link {
+         color: $white-color;
+      }
+   }
+   &-title {
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 14px;
+   }
+   &-social {
+      flex: 1;
+      &-menu {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         gap: 20px;
+      }
+      &-menu {
+         margin-top: 10px;
+      }
+      &-link {
+         color: $white-color;
+         font-size: 20px;
+         &:hover {
+            color: $orange-color;
+         }
+      }
+   }
+   &-copyright {
+      padding: 30px 0 50px;
+      border-top: 1px solid $white-color;
+      opacity: 0.5;
+   }
+}
+*/
+.footer {
+   user-select: none;
+   background-color: rgba(0, 0, 0, 0.8);
+   color: $white-color;
+
+   &-container {
+      @include container;
+      text-align: center;
+   }
+
+   &-content {
+      padding-top: 30px;
+      padding-bottom: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+   }
+   &-logo {
+      flex: 1;
+      align-items: center;
+      a {
+         width: 200px;
+         font-weight: 800;
+         font-size: 18px;
+         text-align: center;
+         letter-spacing: 2px;
+         height: 100%;
+         user-select: none;
+         color: $white-color;
+         & img {
+            width: 100%;
+            object-fit: cover;
+         }
+      }
+   }
+   &-center {
+      flex: 4;
+      display: grid;
+      grid-template-columns: auto auto auto;
+      gap: 30px;
+      &-menu {
+         text-align: left;
+         div {
+            text-align: right;
+            text-align: justify;
+            margin-left: 8px;
+         }
+         p {
+            text-transform: uppercase;
+            font-weight: 600;
+            font-size: 18px;
+            position: relative;
+            display: block;
+            width: fit-content;
+            &::before {
+               content: "";
+               position: absolute;
+               bottom: 3px;
+               left: 50%;
+               transform: translateX(-50%);
+               width: 50%;
+               height: 2px;
+               background-color: $white-color;
+            }
+         }
+      }
+      &-item {
+         min-width: 135px;
+      }
+      &-item:hover &-link {
+         color: $orange-color;
+      }
+      &-link {
+         color: $white-color;
+      }
+   }
+   &-title {
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 14px;
+   }
+   &-social {
+      flex: 1;
+      &-menu {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         gap: 20px;
+      }
+      &-menu {
+         margin-top: 10px;
+      }
+
+      &-link {
+         color: $white-color;
+         font-size: 20px;
+         transition: all 0.5s ease;
+         &:hover {
+            color: $orange-color;
+         }
+         & p {
+            display: none;
+         }
+      }
+   }
+   &-copyright {
+      padding: 30px 0 50px;
+      border-top: 1px solid $white-color;
+      opacity: 0.5;
+   }
+}

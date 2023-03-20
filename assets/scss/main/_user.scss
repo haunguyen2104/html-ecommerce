@@ -1,0 +1,183 @@
+.user {
+   margin-top: $header-height;
+   padding-bottom: 30px;
+   &-container {
+      @include container;
+   }
+
+   &-name {
+      background-color: $eee;
+      padding: 30px;
+      font-size: 25px;
+      text-transform: uppercase;
+      margin-bottom: 30px;
+      & span {
+         font-weight: 700;
+      }
+   }
+   &-content {
+      display: flex;
+      gap: 30px;
+   }
+   &-l {
+      border: 1px solid $ddd;
+      width: 25%;
+      height: fit-content;
+   }
+   &-menu {
+      &-item {
+         padding: 10px 8px;
+         &:not(:last-child) {
+            border-bottom: 1px solid $ddd;
+         }
+         &:hover,
+         &-active {
+            background-color: $ddd;
+         }
+      }
+
+      &-item:hover &-link {
+         color: $orange-color;
+      }
+      &-item-active:hover &-link {
+         color: $black-color;
+      }
+      &-link {
+         display: block;
+      }
+   }
+   &-r {
+      width: 75%;
+      &-wrapper {
+         border: 1px solid $ddd;
+         margin-bottom: 30px;
+      }
+      &-top {
+         display: flex;
+         gap: 30px;
+         border-bottom: 1px solid $ddd;
+         background-color: $white-color;
+         padding: 15px;
+         // background-color: red;
+      }
+      &-image {
+         width: 100px;
+         height: 100px;
+         border-radius: 100%;
+         & img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+         }
+      }
+      &-name {
+      }
+      &-email {
+      }
+      &-edit {
+         margin-top: 10px;
+         border: 1px solid $black-color;
+         padding: 4px 8px;
+         border-radius: 5px;
+         background-color: $white-color;
+         cursor: pointer;
+         &:hover {
+            color: $orange-color;
+         }
+      }
+      &-center {
+         padding: 15px;
+         background-color: $white-color;
+         & p {
+            & i {
+               color: #aaaaaa;
+            }
+            margin: 0;
+            line-height: 1;
+            &:first-child {
+               display: block;
+            }
+
+            display: inline-block;
+         }
+      }
+      &-center &-edit {
+         border: none;
+         display: inline-block;
+         margin-top: 0;
+         margin-left: 8px;
+      }
+      &-stats {
+         display: grid;
+         grid-template-columns: auto auto auto auto;
+         background-color: #f6f7f9;
+         margin-top: 10px;
+         &-item {
+            padding: 15px;
+            padding-right: 0;
+            border: 1px solid $eee;
+         }
+         &-number {
+            color: $black-color;
+            font-weight: 600;
+            font-size: 30px;
+         }
+         &-title {
+            font-weight: 300;
+            font-size: 14px;
+            margin-top: 10px;
+         }
+      }
+      // &-bottom {
+      // }
+      &-recent {
+         border: 1px solid $ddd;
+         padding: 15px;
+         &-menu {
+            display: grid;
+            grid-template-columns: auto auto;
+            gap: 15px;
+            &-item {
+               display: flex;
+               column-gap: 10px;
+            }
+            &-image {
+               border: 1px solid $ddd;
+               width: 80px;
+               & img {
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                  scale: 0.8;
+               }
+            }
+            &-celandar {
+               display: flex;
+               align-items: center;
+               column-gap: 6px;
+               color: #aaaaaa;
+            }
+            &-status {
+               color: $success-color;
+            }
+         }
+         &-button {
+            width: 100%;
+            margin-top: 20px;
+            align-items: center;
+            text-align: center;
+            border: 1px solid $orange-color;
+            border-radius: 5px;
+            color: $orange-color;
+            font-weight: 600;
+            padding: 6px 0;
+            cursor: pointer;
+            transition: all 0.5s;
+            &:hover {
+               background-color: $orange-color;
+               color: $white-color;
+            }
+         }
+      }
+   }
+}

@@ -1,0 +1,101 @@
+.detail {
+   margin-top: $header-height;
+   &-container {
+      @include container;
+      border: 1px solid $ddd;
+      margin-bottom: 30px;
+      display: flex;
+      gap: 30px;
+      padding: 30px;
+      background-color: #efefef;
+   }
+   &-image {
+      width: 50%;
+      border: 1px solid $ddd;
+      padding: 10px 5px;
+      background-color: $white-color;
+
+      &-small {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         margin-top: 20px;
+         gap: 20px;
+
+         & img {
+            width: 100px;
+            border: 1px solid;
+            border-radius: 5px;
+            padding: 4px;
+            cursor: pointer;
+         }
+      }
+      &-big {
+         width: 80%;
+         margin-left: 10%;
+         & img {
+            margin: 0 auto;
+         }
+      }
+   }
+   &-name {
+      font-weight: 700;
+      font-size: 20px;
+      text-transform: uppercase;
+      margin-bottom: 30px;
+      line-height: 1;
+   }
+   &-desc {
+      font-weight: 300;
+      color: $black-color;
+      text-align: justify;
+   }
+   &-info {
+      width: 50%;
+      & table {
+         border: 1px solid $ddd;
+         border-collapse: collapse;
+         margin-bottom: 30px;
+         & tr {
+            &:nth-child(1) {
+               font-size: 18px;
+               font-weight: 600;
+               text-transform: uppercase;
+            }
+            &:nth-child(odd) {
+               background-color: #efefef;
+            }
+            &:nth-child(even) {
+               background-color: #ababab57;
+            }
+         }
+         & th {
+            width: 200px;
+            padding: 6px 12px;
+            text-align: left;
+         }
+         & td {
+            padding: 6px 12px;
+         }
+      }
+   }
+   &-action {
+      margin-left: 50px;
+      margin-bottom: 15px;
+   }
+   &-quantity {
+      text-align: center;
+      padding: 6px 0;
+      width: 40px;
+      padding-left: 3px;
+      padding-right: 3px;
+   }
+
+   &-add-to-cart {
+      padding: 6px 10px;
+      background-color: $orange-color;
+      border-radius: 4px;
+      color: $white-color;
+      margin-left: 10px;
+   }
+}

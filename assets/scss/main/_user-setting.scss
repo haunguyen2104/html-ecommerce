@@ -1,0 +1,62 @@
+.user {
+   &-r {
+      &-setting {
+         display: flex;
+         background-color: $white-color;
+         min-height: 400px;
+         border: 1px solid $ccc;
+      }
+   }
+   &-setting {
+      flex: 1;
+      padding: 15px;
+      &-form {
+         &-group {
+            display: grid;
+            display: flex;
+            gap: 10px;
+            margin-bottom: 10px;
+         }
+         &-item {
+            width: 100%;
+            & label {
+               display: block;
+               margin-left: 10px;
+            }
+            & input,
+            & select {
+               border: 1px solid $ddd;
+               width: 100%;
+               padding: 10px;
+               border-radius: 6px;
+            }
+         }
+      }
+      &-avatar {
+         padding: 15px;
+         width: 150px;
+         height: 150px;
+         img {
+            border-radius: 100rem;
+         }
+      }
+      &-button {
+         padding: 7px 12px;
+         border-radius: 6px;
+         font-weight: 600;
+         border: 1px solid;
+         cursor: pointer;
+         &:first-child {
+            background-color: $orange-color;
+            color: $white-color;
+            &:hover {
+               opacity: 0.8;
+            }
+         }
+         &:last-child {
+            background-color: $white-color;
+            border-color: $ccc;
+         }
+      }
+   }
+}

@@ -1,0 +1,221 @@
+.home {
+   &-product {
+      margin-bottom: 30px;
+      &-container {
+         @include container;
+         margin-top: 30px;
+      }
+
+      &-list {
+         display: flex;
+         align-items: center;
+         gap: 30px;
+         flex-wrap: wrap;
+      }
+      &-item {
+         width: calc(20% - 24px);
+         border: 1px solid $ccc;
+         padding: 10px;
+         border-radius: 3px;
+         background-color: $white-color;
+         &-image {
+            width: 80%;
+            margin: 0 auto 20px auto;
+            scale: 0.9;
+            transition: scale 0.5s ease;
+            & img {
+               width: 100%;
+               object-fit: cover;
+               display: block;
+            }
+         }
+      }
+      &-item:hover &-name {
+         color: $orange-color;
+      }
+      &-item:hover &-item-image {
+         scale: 1;
+      }
+      &-content {
+         padding: 0 20px;
+      }
+      &-info {
+         // margin-bottom: 10px;
+      }
+      &-name {
+         font-size: 18px;
+         font-weight: 500;
+         line-height: 1.3;
+         height: 46px;
+         display: -webkit-box;
+         -webkit-line-clamp: 2;
+         -webkit-box-orient: vertical;
+         overflow: hidden;
+         text-overflow: ellipsis;
+         word-break: break-word;
+         transition: color 0.3s ease;
+      }
+      &-price {
+         font-weight: 600;
+         font-size: 16px;
+         color: $red-color;
+         text-align: center;
+         sup {
+            text-decoration: underline;
+            font-size: 12px;
+            margin-left: 2px;
+         }
+      }
+      &-others {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         margin-bottom: 20px;
+         flex-direction: column;
+         align-items: flex-start;
+      }
+      &-gift {
+         font-size: 14px;
+         font-weight: 400;
+      }
+      &-rating {
+         display: none;
+         font-size: 14px;
+         font-weight: 400;
+         & span:nth-child(1) {
+            font-weight: 500;
+         }
+         & i {
+            color: $orange-color;
+         }
+         &-count {
+            font-weight: 500;
+         }
+      }
+   }
+   &-sale {
+      margin-bottom: 30px;
+      &-container {
+         @include container;
+      }
+      &-wrapper {
+         position: relative;
+         width: 100%;
+      }
+      &-wrapper:hover &-control i {
+         opacity: 1;
+      }
+
+      &-control {
+         position: absolute;
+         left: -12px;
+         right: -12px;
+         top: 50%;
+         transform: translateY(-50%);
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         i {
+            font-size: 20px;
+            cursor: pointer;
+            padding: 10px 5px;
+            border: 1px solid $ccc;
+            background-color: #fff;
+            opacity: 0;
+         }
+      }
+      &-list {
+         display: inline-flex;
+         gap: 30px;
+         flex-wrap: wrap;
+      }
+      &-item {
+         border: 1px solid $ccc;
+         padding: 10px;
+         border-radius: 3px;
+         width: calc(20% - 24px);
+         width: 216px;
+         left: 20px;
+         background-color: $white-color;
+      }
+      &-item:hover &-image img {
+         scale: 1;
+      }
+      &-item:hover &-name {
+         color: $orange-color;
+         font-weight: 600;
+      }
+      &-item:hover &-price {
+         transform: translateY(0);
+         opacity: 1;
+      }
+      &-thumb {
+         position: relative;
+      }
+      &-image {
+         display: block;
+         & img {
+            margin: 0 auto;
+            width: 100%;
+            scale: 0.9;
+            transition: all 0.5s ease;
+         }
+      }
+      &-percent {
+         position: absolute;
+         top: -11px;
+         right: -11px;
+         font-size: 14px;
+         border-top-right-radius: 3px;
+         font-weight: 500;
+         padding: 12px 8px;
+         line-height: 1;
+         max-width: 52px;
+         color: $white-color;
+         width: 100%;
+         background-color: $orange-color;
+         &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -14px;
+            border-width: 0 26px 14px;
+            border-style: solid;
+            border-color: transparent $orange-color;
+         }
+      }
+      &-info {
+         padding: 10px;
+         text-align: center;
+      }
+      &-name {
+         font-size: 18px;
+         font-weight: 500;
+         display: -webkit-box;
+         height: 54px;
+         line-height: 1.5;
+         -webkit-line-clamp: 2;
+         -webkit-box-orient: vertical;
+         overflow: hidden;
+         text-overflow: ellipsis;
+         word-break: break-word;
+         transition: all 0.5s ease;
+      }
+      &-price {
+         color: $black-color;
+         font-size: 500px;
+         font-size: 15px;
+         transform: translateY(20px);
+         opacity: 0;
+         transition: all 0.5s ease;
+         sup {
+            text-decoration: underline;
+            font-size: 12px;
+            margin-left: 2px;
+         }
+         span {
+            font-size: 12px;
+         }
+      }
+   }
+}

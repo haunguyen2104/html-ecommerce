@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Product Detail | home-product</title>
+   <link rel="stylesheet" href="./assets/css/app.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+   <header class="header">
+      <div class="header-container">
+         <div class="header-logo">
+            <a href="./index.html"> Hau Nguyen</a>
+         </div>
+         <ul class="header-menu">
+            <li class="header-menu-item">
+               <a href="./index.html" class="header-menu-link">Home</a>
+            </li>
+            <li class="header-menu-item">
+               <a href="#!" class="header-menu-link">Category</a>
+            </li>
+            <li class="header-menu-item">
+               <a href="#!" class="header-menu-link">Brand</a>
+            </li>
+            <li class="header-menu-item">
+               <a href="#!" class="header-menu-link">Contact</a>
+            </li>
+            <li class="header-menu-item">
+               <a href="#!" class="header-menu-link">Info</a>
+            </li>
+            <li class="header-menu-item">
+               <a href="#!" class="header-menu-link">Post</a>
+            </li>
+         </ul>
+         <ul class="header-action">
+            <li class="header-action-item">
+               <a href="./user.html" class="header-action-link">
+                  <i class="fa-solid fa-user"></i>
+                  <p>My profile</p>
+               </a>
+            </li>
+            <li class="header-action-item">
+               <a href="./cart.html" class="header-action-link">
+                  <i class="fa-solid fa-shopping-cart"></i>
+                  <p>Cart</p>
+                  <span class="header-action-notify">3</span>
+               </a>
+            </li>
+            <li class="header-action-item">
+               <a href="#!" class="header-action-link">
+                  <i class="fa-solid fa-comment-dots"></i>
+                  <p>Chat</p>
+               </a>
+            </li>
+
+         </ul>
+      </div>
+   </header>
+   <section class="detail">
+      <div class="detail-container">
+         <div class="detail-image">
+            <div class="detail-image-big">
+               <img src="./assets/images/product1.jpg" alt="">
+            </div>
+            <div class="detail-image-small">
+               <img src="./assets/images/product1.jpg" alt="">
+               <img src="./assets/images/product2.jpg" alt="">
+               <img src="./assets/images/product3.jpg" alt="">
+               <img src="./assets/images/product4.jpg" alt="">
+            </div>
+         </div>
+         <div class="detail-info">
+            <h3 class="detail-name">iPhone 13 Pro Max 128GB</h3>
+            <table>
+               <tr>
+                  <th colspan="2">Cấu hình</th>
+               </tr>
+               <tr>
+                  <th>Mã sản phẩm:</th>
+                  <td>#ip13pm</td>
+               </tr>
+               <tr>
+                  <th>Màn hình:</th>
+                  <td>OLED6.7"Super Retina XDR</td>
+               </tr>
+               </tr>
+               <tr>
+                  <th>Hệ điều hành:</th>
+                  <td>iOS 15</td>
+               </tr>
+               <tr>
+                  <th>Camera sau:</th>
+                  <td>3 camera 12 MP</td>
+               </tr>
+               <tr>
+                  <th>Camera trước:</th>
+                  <td>12 MP</td>
+               </tr>
+               <tr>
+                  <th>Chip:</th>
+                  <td>Apple A15 Bionic</td>
+               </tr>
+               <tr>
+                  <th>RAM:</th>
+                  <td>6GB</td>
+               </tr>
+               <tr>
+                  <th>Dung lượng lưu trữ:</th>
+                  <td>128 GB</td>
+               </tr>
+               <tr>
+                  <th>SIM:</th>
+                  <td>1 Nano SIM & 1 eSIMHỗ trợ 5G</td>
+               </tr>
+               <tr>
+                  <th>Pin, Sạc:</th>
+                  <td>4352 mAh20 W</td>
+               </tr>
+
+            </table>
+            <div class="detail-action">
+               <input type="number" name="" id="" class="detail-quantity" min="0" max="50" value="0">
+               <a href="#!" class="detail-add-to-cart">Add to cart</a>
+            </div>
+            <p class="detail-desc">
+               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio dicta et molestiae similique sed
+               rem dolor distinctio! Nulla repellendus dicta explicabo, quam nam velit aliquid voluptatem mollitia
+               voluptas. Nihil, repudiandae.
+            </p>
+         </div>
+      </div>
+   </section>
+   <div class="product-related">
+      <div class="product-container">
+         <div class="title-wrap">
+            <h3 class="title">
+               Related products
+            </h3>
+         </div>
+         <div class="product-list" data-limit="4">
+            <div class="product-item">
+               <div class="product-item-image">
+                  <a href="./product-detail.html">
+                     <img src="./assets/images/product1.jpg" alt=""></a>
+               </div>
+               <div class="product-content">
+                  <div class="product-info">
+                     <a href="./product-detail.html" class="product-name">Product Name 1</a>
+                     <p class="product-price">30.590.000<sup>đ</sup></p>
+                  </div>
+                  <div class="product-others">
+                     <div class="product-gift">
+                        Quà 100.000 <sup>đ</sup>
+                     </div>
+                     <div class="product-rating">
+                        <span>4.7</span>
+                        <i class="fa-solid fa-star"></i>
+                        <span class="product-rating-count">(233)</span>
+                     </div>
+
+                  </div>
+               </div>
+            </div>
+            <div class="product-item">
+               <div class="product-item-image">
+                  <a href="./product-detail.html">
+                     <img src="./assets/images/product2.jpg" alt=""></a>
+               </div>
+               <div class="product-content">
+                  <div class="product-info">
+                     <a href="./product-detail.html" class="product-name">Product Name 2 </a>
+                     <p class="product-price">30.590.000<sup>đ</sup></p>
+                  </div>
+                  <div class="product-others">
+                     <div class="product-gift">
+                        Quà 100.000 <sup>đ</sup>
+                     </div>
+                     <div class="product-rating">
+                        <span>4.7</span>
+                        <i class="fa-solid fa-star"></i>
+                        <span class="product-rating-count">(233)</span>
+                     </div>
+
+                  </div>
+               </div>
+            </div>
+            <div class="product-item">
+               <div class="product-item-image">
+                  <a href="./product-detail.html">
+                     <img src="./assets/images/product3.jpg" alt=""></a>
+               </div>
+               <div class="product-content">
+                  <div class="product-info">
+                     <a href="./product-detail.html" class="product-name">Product Name 3</a>
+                     <p class="product-price">30.590.000<sup>đ</sup></p>
+                  </div>
+                  <div class="product-others">
+                     <div class="product-gift">
+                        Quà 100.000 <sup>đ</sup>
+                     </div>
+                     <div class="product-rating">
+                        <span>4.7</span>
+                        <i class="fa-solid fa-star"></i>
+                        <span class="product-rating-count">(233)</span>
+                     </div>
+
+                  </div>
+               </div>
+            </div>
+            <div class="product-item">
+               <div class="product-item-image">
+                  <a href="./product-detail.html">
+                     <img src="./assets/images/product4.jpg" alt=""></a>
+               </div>
+               <div class="product-content">
+                  <div class="product-info">
+                     <a href="./product-detail.html" class="product-name">Product Name 4</a>
+                     <p class="product-price">30.590.000<sup>đ</sup></p>
+                  </div>
+                  <div class="product-others">
+                     <div class="product-gift">
+                        Quà 100.000 <sup>đ</sup>
+                     </div>
+                     <div class="product-rating">
+                        <span>4.7</span>
+                        <i class="fa-solid fa-star"></i>
+                        <span class="product-rating-count">(233)</span>
+                     </div>
+
+                  </div>
+               </div>
+            </div>
+            <div class="product-item">
+               <div class="product-item-image">
+                  <a href="./product-detail.html">
+                     <img src="./assets/images/product5.jpeg" alt=""></a>
+               </div>
+               <div class="product-content">
+                  <div class="product-info">
+                     <a href="./product-detail.html" class="product-name">Product Name 5</a>
+                     <p class="product-price">30.590.000<sup>đ</sup></p>
+                  </div>
+                  <div class="product-others">
+                     <div class="product-gift">
+                        Quà 100.000 <sup>đ</sup>
+                     </div>
+                     <div class="product-rating">
+                        <span>4.7</span>
+                        <i class="fa-solid fa-star"></i>
+                        <span class="product-rating-count">(233)</span>
+                     </div>
+
+                  </div>
+               </div>
+            </div>
+            <div class="product-item">
+               <div class="product-item-image">
+                  <a href="./product-detail.html">
+                     <img src="./assets/images/product6.jpg" alt=""></a>
+               </div>
+               <div class="product-content">
+                  <div class="product-info">
+                     <a href="./product-detail.html" class="product-name">Product Name 6</a>
+                     <p class="product-price">30.590.000<sup>đ</sup></p>
+                  </div>
+                  <div class="product-others">
+                     <div class="product-gift">
+                        Quà 100.000 <sup>đ</sup>
+                     </div>
+                     <div class="product-rating">
+                        <span>4.7</span>
+                        <i class="fa-solid fa-star"></i>
+                        <span class="product-rating-count">(233)</span>
+                     </div>
+
+                  </div>
+               </div>
+            </div>
+            <div class="product-item">
+               <div class="product-item-image">
+                  <a href="./product-detail.html">
+                     <img src="./assets/images/product7.jpg" alt=""></a>
+               </div>
+               <div class="product-content">
+                  <div class="product-info">
+                     <a href="./product-detail.html" class="product-name">Product Name 7</a>
+                     <p class="product-price">30.590.000<sup>đ</sup></p>
+                  </div>
+                  <div class="product-others">
+                     <div class="product-gift">
+                        Quà 100.000 <sup>đ</sup>
+                     </div>
+                     <div class="product-rating">
+                        <span>4.7</span>
+                        <i class="fa-solid fa-star"></i>
+                        <span class="product-rating-count">(233)</span>
+                     </div>
+
+                  </div>
+               </div>
+            </div>
+            <div class="product-item">
+               <div class="product-item-image">
+                  <a href="./product-detail.html">
+                     <img src="./assets/images/product8.jpg" alt=""></a>
+               </div>
+               <div class="product-content">
+                  <div class="product-info">
+                     <a href="./product-detail.html" class="product-name">Product Name 8</a>
+                     <p class="product-price">30.590.000<sup>đ</sup></p>
+                  </div>
+                  <div class="product-others">
+                     <div class="product-gift">
+                        Quà 100.000 <sup>đ</sup>
+                     </div>
+                     <div class="product-rating">
+                        <span>4.7</span>
+                        <i class="fa-solid fa-star"></i>
+                        <span class="product-rating-count">(233)</span>
+                     </div>
+
+                  </div>
+               </div>
+            </div>
+            <div class="product-item">
+               <div class="product-item-image">
+                  <a href="./product-detail.html">
+                     <img src="./assets/images/product9.jpg" alt=""></a>
+               </div>
+               <div class="product-content">
+                  <div class="product-info">
+                     <a href="./product-detail.html" class="product-name">Product Name 9</a>
+                     <p class="product-price">30.590.000<sup>đ</sup></p>
+                  </div>
+                  <div class="product-others">
+                     <div class="product-gift">
+                        Quà 100.000 <sup>đ</sup>
+                     </div>
+                     <div class="product-rating">
+                        <span>4.7</span>
+                        <i class="fa-solid fa-star"></i>
+                        <span class="product-rating-count">(233)</span>
+                     </div>
+
+                  </div>
+               </div>
+            </div>
+
+            <div class="product-item">
+               <div class="product-item-image">
+                  <a href="./product-detail.html">
+                     <img src="./assets/images/product1.jpg" alt=""></a>
+               </div>
+               <div class="product-content">
+                  <div class="product-info">
+                     <a href="./product-detail.html" class="product-name">Product Name 10</a>
+                     <p class="product-price">30.590.000<sup>đ</sup></p>
+                  </div>
+                  <div class="product-others">
+                     <div class="product-gift">
+                        Quà 100.000 <sup>đ</sup>
+                     </div>
+                     <div class="product-rating">
+                        <span>4.7</span>
+                        <i class="fa-solid fa-star"></i>
+                        <span class="product-rating-count">(233)</span>
+                     </div>
+
+                  </div>
+               </div>
+            </div>
+            <div class="product-item">
+               <div class="product-item-image">
+                  <a href="./product-detail.html">
+                     <img src="./assets/images/product1.jpg" alt=""></a>
+               </div>
+               <div class="product-content">
+                  <div class="product-info">
+                     <a href="./product-detail.html" class="product-name">Product Name 11</a>
+                     <p class="product-price">30.590.000<sup>đ</sup></p>
+                  </div>
+                  <div class="product-others">
+                     <div class="product-gift">
+                        Quà 100.000 <sup>đ</sup>
+                     </div>
+                     <div class="product-rating">
+                        <span>4.7</span>
+                        <i class="fa-solid fa-star"></i>
+                        <span class="product-rating-count">(233)</span>
+                     </div>
+
+                  </div>
+               </div>
+            </div>
+            <div class="product-item">
+               <div class="product-item-image">
+                  <a href="./product-detail.html">
+                     <img src="./assets/images/product2.jpg" alt=""></a>
+               </div>
+               <div class="product-content">
+                  <div class="product-info">
+                     <a href="./product-detail.html" class="product-name">Product Name 12 </a>
+                     <p class="product-price">30.590.000<sup>đ</sup></p>
+                  </div>
+                  <div class="product-others">
+                     <div class="product-gift">
+                        Quà 100.000 <sup>đ</sup>
+                     </div>
+                     <div class="product-rating">
+                        <span>4.7</span>
+                        <i class="fa-solid fa-star"></i>
+                        <span class="product-rating-count">(233)</span>
+                     </div>
+
+                  </div>
+               </div>
+            </div>
+            <div class="product-item">
+               <div class="product-item-image">
+                  <a href="./product-detail.html">
+                     <img src="./assets/images/product3.jpg" alt=""></a>
+               </div>
+               <div class="product-content">
+                  <div class="product-info">
+                     <a href="./product-detail.html" class="product-name">Product Name 13</a>
+                     <p class="product-price">30.590.000<sup>đ</sup></p>
+                  </div>
+                  <div class="product-others">
+                     <div class="product-gift">
+                        Quà 100.000 <sup>đ</sup>
+                     </div>
+                     <div class="product-rating">
+                        <span>4.7</span>
+                        <i class="fa-solid fa-star"></i>
+                        <span class="product-rating-count">(233)</span>
+                     </div>
+
+                  </div>
+               </div>
+            </div>
+            <div class="product-item">
+               <div class="product-item-image">
+                  <a href="./product-detail.html">
+                     <img src="./assets/images/product4.jpg" alt=""></a>
+               </div>
+               <div class="product-content">
+                  <div class="product-info">
+                     <a href="./product-detail.html" class="product-name">Product Name 14</a>
+                     <p class="product-price">30.590.000<sup>đ</sup></p>
+                  </div>
+                  <div class="product-others">
+                     <div class="product-gift">
+                        Quà 100.000 <sup>đ</sup>
+                     </div>
+                     <div class="product-rating">
+                        <span>4.7</span>
+                        <i class="fa-solid fa-star"></i>
+                        <span class="product-rating-count">(233)</span>
+                     </div>
+
+                  </div>
+               </div>
+            </div>
+            <div class="product-item">
+               <div class="product-item-image">
+                  <a href="./product-detail.html">
+                     <img src="./assets/images/product5.jpeg" alt=""></a>
+               </div>
+               <div class="product-content">
+                  <div class="product-info">
+                     <a href="./product-detail.html" class="product-name">Product Name 15</a>
+                     <p class="product-price">30.590.000<sup>đ</sup></p>
+                  </div>
+                  <div class="product-others">
+                     <div class="product-gift">
+                        Quà 100.000 <sup>đ</sup>
+                     </div>
+                     <div class="product-rating">
+                        <span>4.7</span>
+                        <i class="fa-solid fa-star"></i>
+                        <span class="product-rating-count">(233)</span>
+                     </div>
+
+                  </div>
+               </div>
+            </div>
+            <div class="product-item">
+               <div class="product-item-image">
+                  <a href="./product-detail.html">
+                     <img src="./assets/images/product6.jpg" alt=""></a>
+               </div>
+               <div class="product-content">
+                  <div class="product-info">
+                     <a href="./product-detail.html" class="product-name">Product Name 16</a>
+                     <p class="product-price">30.590.000<sup>đ</sup></p>
+                  </div>
+                  <div class="product-others">
+                     <div class="product-gift">
+                        Quà 100.000 <sup>đ</sup>
+                     </div>
+                     <div class="product-rating">
+                        <span>4.7</span>
+                        <i class="fa-solid fa-star"></i>
+                        <span class="product-rating-count">(233)</span>
+                     </div>
+
+                  </div>
+               </div>
+            </div>
+            <div class="product-item">
+               <div class="product-item-image">
+                  <a href="./product-detail.html">
+                     <img src="./assets/images/product7.jpg" alt=""></a>
+               </div>
+               <div class="product-content">
+                  <div class="product-info">
+                     <a href="./product-detail.html" class="product-name">Product Name 17</a>
+                     <p class="product-price">30.590.000<sup>đ</sup></p>
+                  </div>
+                  <div class="product-others">
+                     <div class="product-gift">
+                        Quà 100.000 <sup>đ</sup>
+                     </div>
+                     <div class="product-rating">
+                        <span>4.7</span>
+                        <i class="fa-solid fa-star"></i>
+                        <span class="product-rating-count">(233)</span>
+                     </div>
+
+                  </div>
+               </div>
+            </div>
+            <div class="product-item">
+               <div class="product-item-image">
+                  <a href="./product-detail.html">
+                     <img src="./assets/images/product8.jpg" alt=""></a>
+               </div>
+               <div class="product-content">
+                  <div class="product-info">
+                     <a href="./product-detail.html" class="product-name">Product Name 18</a>
+                     <p class="product-price">30.590.000<sup>đ</sup></p>
+                  </div>
+                  <div class="product-others">
+                     <div class="product-gift">
+                        Quà 100.000 <sup>đ</sup>
+                     </div>
+                     <div class="product-rating">
+                        <span>4.7</span>
+                        <i class="fa-solid fa-star"></i>
+                        <span class="product-rating-count">(233)</span>
+                     </div>
+
+                  </div>
+               </div>
+            </div>
+            <div class="product-item">
+               <div class="product-item-image">
+                  <a href="./product-detail.html">
+                     <img src="./assets/images/product9.jpg" alt=""></a>
+               </div>
+               <div class="product-content">
+                  <div class="product-info">
+                     <a href="./product-detail.html" class="product-name">Product Name 19</a>
+                     <p class="product-price">30.590.000<sup>đ</sup></p>
+                  </div>
+                  <div class="product-others">
+                     <div class="product-gift">
+                        Quà 100.000 <sup>đ</sup>
+                     </div>
+                     <div class="product-rating">
+                        <span>4.7</span>
+                        <i class="fa-solid fa-star"></i>
+                        <span class="product-rating-count">(233)</span>
+                     </div>
+
+                  </div>
+               </div>
+            </div>
+
+            <div class="product-item">
+               <div class="product-item-image">
+                  <a href="./product-detail.html">
+                     <img src="./assets/images/product1.jpg" alt=""></a>
+               </div>
+               <div class="product-content">
+                  <div class="product-info">
+                     <a href="./product-detail.html" class="product-name">Product Name 20</a>
+                     <p class="product-price">30.590.000<sup>đ</sup></p>
+                  </div>
+                  <div class="product-others">
+                     <div class="product-gift">
+                        Quà 100.000 <sup>đ</sup>
+                     </div>
+                     <div class="product-rating">
+                        <span>4.7</span>
+                        <i class="fa-solid fa-star"></i>
+                        <span class="product-rating-count">(233)</span>
+                     </div>
+
+                  </div>
+               </div>
+            </div>
+
+
+         </div>
+         <ul class="pagination">
+            <li class="pagination-active">1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+         </ul>
+      </div>
+   </div>
+   <footer class="footer">
+      <div class="footer-container">
+         <div class="footer-content">
+            <div class="footer-logo">
+               <a href="./index.html">HauNguyen</a>
+            </div>
+            <div class="footer-center">
+               <ul class="footer-center-menu">
+                  <p>Category</p>
+                  <li class="footer-center-item">
+                     <a href="#!" class="footer-center-link">SmartPhone</a>
+                  </li>
+                  <li class="footer-center-item">
+                     <a href="#!" class="footer-center-link">Laptop</a>
+                  </li>
+                  <li class="footer-center-item">
+                     <a href="#!" class="footer-center-link">Fashion watches</a>
+                  </li>
+               </ul>
+               <ul class="footer-center-menu">
+                  <p>Category</p>
+                  <li class="footer-center-item">
+                     <a href="#!" class="footer-center-link">SmartPhone</a>
+                  </li>
+                  <li class="footer-center-item">
+                     <a href="#!" class="footer-center-link">Laptop</a>
+                  </li>
+                  <li class="footer-center-item">
+                     <a href="#!" class="footer-center-link">Fashion watches</a>
+                  </li>
+               </ul>
+               <div class="footer-center-menu">
+                  <p>Lời cảm ơn</p>
+                  <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum itaque vero tempore maiores
+                     rerum nulla error, asperiores provident magnam voluptas ipsa voluptatibus. In, eos veniam?</div>
+               </div>
+            </div>
+            <div class="footer-social">
+               <h3 class="footer-title">Follow us:</h3>
+               <ul class="footer-social-menu">
+                  <li class="footer-social-item">
+                     <a href="https://www.facebook.com/" class="footer-social-link">
+                        <i class="fa-brands fa-facebook"></i>
+                     </a>
+                  </li>
+                  <li class="footer-social-item">
+                     <a href="https://www.youtube.com/" class="footer-social-link">
+                        <i class="fa-brands fa-youtube"></i>
+                     </a>
+                  </li>
+                  <li class="footer-social-item">
+                     <a href="https://www.tiktok.com/" class="footer-social-link">
+                        <i class="fa-brands fa-tiktok"></i>
+                     </a>
+                  </li>
+
+               </ul>
+            </div>
+         </div>
+         <div class="footer-copyright">
+            <p> &copy; Design by Hau Nguyen - 11/2022</p>
+         </div>
+      </div>
+   </footer>
+
+   <script src="./assets/js/script.js"></script>
+   <script src="./assets/js/product-slider.js"></script>
+
+   <!-- <script src="./assets/js/slider.js"></script> -->
+</body>
+
+</html>

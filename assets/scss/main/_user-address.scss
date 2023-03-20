@@ -1,0 +1,78 @@
+.user {
+   &-address {
+      &-button {
+         &-add {
+            padding: 8px 15px;
+            border: 1px solid rgba($black-color, $alpha: 0.8);
+            display: inline-block;
+            margin-bottom: 10px;
+            font-weight: 600;
+            cursor: pointer;
+            i {
+               opacity: 0.8;
+               font-weight: 700;
+            }
+         }
+         &-edit {
+            padding: 6px 10px;
+            background-color: $white-color;
+            border: 1px solid $eee;
+            border-radius: 4px;
+            cursor: pointer;
+            &:hover {
+               border-color: $black-color;
+            }
+         }
+         &-delete {
+            color: $red-color;
+            border-radius: 4px;
+            cursor: pointer;
+            border: 1px solid $eee;
+            background-color: $white-color;
+            padding: 6px 10px;
+            &:hover {
+               border-color: $black-color;
+            }
+         }
+         &-select {
+            border-radius: 4px;
+            cursor: pointer;
+            background-color: $white-color;
+            border: 1px solid $eee;
+            padding: 6px 10px;
+            font-weight: 600;
+            &:hover {
+               color: $orange-color;
+               border-color: $black-color;
+            }
+         }
+         &-disable {
+            opacity: 0.5;
+            cursor: default;
+            &:hover {
+               color: unset;
+               border: 1px solid #eeeeee80;
+            }
+         }
+      }
+      &-list {
+         display: grid;
+         grid-template-columns: auto auto;
+         gap: 30px;
+      }
+      &-item {
+         border: 1px solid $ccc;
+         background-color: $white-color;
+         padding: 15px;
+      }
+      &-location {
+         font-weight: 700;
+         font-size: 18px;
+         margin-bottom: 10px;
+         line-height: 1;
+      }
+      &-others {
+         margin-bottom: 10px;
+      }
+   }
+}

@@ -1,0 +1,28 @@
+@media screen and (max-width: 767.98px) {
+   .home {
+      &-product {
+         &-list {
+            gap: 10px;
+         }
+         &-item {
+            width: calc(50% - 5px);
+         }
+      }
+      &-sale {
+         &-list {
+            gap: 10px;
+         }
+         &-item {
+            width: calc(50% - 5px);
+         }
+      }
+      &-blog {
+         &-list {
+            grid-template-columns: auto auto;
+            row-gap: 15px;
+         }
+         &-item {
+         }
+      }
+   }
+}
